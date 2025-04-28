@@ -14,16 +14,19 @@ import {
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBm9HdJ92vSLrKRclI6Z2J4bmvlFgR4AuU",
-  authDomain: "mang-yana.firebaseapp.com",
-  projectId: "mang-yana",
-  storageBucket: "mang-yana.appspot.com",
-  messagingSenderId: "1094982396668",
-  appId: "1:1094982396668:web:2d103526ab40a59efc0579",
-  measurementId: "G-MF48P7VG5P"
+  apiKey: "AIzaSyBX422jzTqH-zHufidDsbDUfx0USgkNvGk",
+  authDomain: "abdul-latif-30eb0.firebaseapp.com",
+  projectId: "abdul-latif-30eb0",
+  storageBucket: "abdul-latif-30eb0.firebasestorage.app",
+  messagingSenderId: "84187616371",
+  appId: "1:84187616371:web:c1b25857234824f0138606",
+  measurementId: "G-G54GZN3DHS"
 };
+
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const analytics = getAnalytics(app);
+
 
 export async function ambildaftartugas() {
   const refDokumen = collection(db, "senin");
